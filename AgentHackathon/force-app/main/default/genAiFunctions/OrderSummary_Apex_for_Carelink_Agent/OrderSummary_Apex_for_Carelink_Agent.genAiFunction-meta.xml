@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Take order id as input.
+Display Order, Order Line items.
+In order Line items replace product id with product name</description>
+    <invocationTarget>OrderSummary</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>OrderSummary Apex for Carelink Agent</masterLabel>
+    <progressIndicatorMessage>Loading Summary....</progressIndicatorMessage>
+</GenAiFunction>

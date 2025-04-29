@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Displaying Presciption based on Patient Phone Number</description>
+    <invocationTarget>Get_Latest_Prescription_Based_on_PhoneNumber_for_Carelink_Agent</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Get Latest Prescription Based on PhoneNumber for Carelink Agent</masterLabel>
+    <progressIndicatorMessage>Fetching Prescription...</progressIndicatorMessage>
+</GenAiFunction>

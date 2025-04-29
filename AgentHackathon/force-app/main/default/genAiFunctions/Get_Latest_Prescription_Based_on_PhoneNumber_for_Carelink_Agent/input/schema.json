@@ -1,0 +1,14 @@
+{
+  "required" : [ "PhoneNumber" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "PhoneNumber" : {
+      "title" : "PhoneNumber",
+      "description" : "Patient Phone Number",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

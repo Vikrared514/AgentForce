@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This topic is selected when patients need assistance with order management.</description>
+    <developerName>Order_Management</developerName>
+    <genAiFunctions>
+        <functionName>Patient_Information_of_CareLink</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Place_An_Order_For_CareLink</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>OrderSummary_Apex_for_Carelink_Agent</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>When asked to place order, ask for the patient&apos;s mobile number and pass it to the action &quot;Get Latest Prescription Based on Phone Number for Carelink Agent. get the patient id and  place an order using the action.
+Do not show the placed order id.
+Run the action for getting order summary and display the output.</description>
+        <developerName>instruction_whenaskedt0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenaskedt0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>when the user uses the term order summary,  take order id as input and give it to the order summary apex action.</description>
+        <developerName>instruction_whentheuse1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whentheuse1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Order Management</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>This topic is selected when patients need assistance with order management.</scope>
+</GenAiPlugin>

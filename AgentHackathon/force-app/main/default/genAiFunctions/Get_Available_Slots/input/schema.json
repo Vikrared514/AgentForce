@@ -1,0 +1,21 @@
+{
+  "required" : [ "SlotDate" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "DoctorName" : {
+      "title" : "DoctorName",
+      "description" : "The input will be Doctor Name.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "SlotDate" : {
+      "title" : "SlotDate",
+      "description" : "The input will be date.",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

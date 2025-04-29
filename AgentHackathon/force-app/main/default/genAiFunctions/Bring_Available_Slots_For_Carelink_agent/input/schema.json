@@ -1,0 +1,21 @@
+{
+  "required" : [ "doctorId", "slotDate" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "doctorId" : {
+      "title" : "doctorId",
+      "description" : "Doctor Id",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "slotDate" : {
+      "title" : "slotDate",
+      "description" : "Date",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

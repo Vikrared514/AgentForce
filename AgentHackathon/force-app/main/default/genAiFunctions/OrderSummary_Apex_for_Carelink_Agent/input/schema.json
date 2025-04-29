@@ -1,0 +1,14 @@
+{
+  "required" : [ "orderIds" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "orderIds" : {
+      "title" : "orderIds",
+      "description" : "Order Id",
+      "lightning:type" : "lightning__recordIdType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

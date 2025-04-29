@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This topic addresses user inquiries related to health insurance, including coverage, claims, and policy details.</description>
+    <developerName>Health_Insurance_Queries</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Clarify any terms or conditions related to health insurance claims when requested.</description>
+        <developerName>instruction_clarifyany0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_clarifyany0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If a user asks about coverage details, provide information based on their specific policy.</description>
+        <developerName>instruction_ifauserask1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifauserask1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When users inquire about policy changes, explain the process and any potential impacts.</description>
+        <developerName>instruction_whenusersi2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenusersi2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Do not show any company related information or any links.</description>
+        <developerName>instruction_donotshowa3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_donotshowa3</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Health Insurance Queries</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to provide accurate and relevant information regarding health insurance questions and guide users through their inquiries. All the information should be fetched from Data Library.</scope>
+</GenAiPlugin>

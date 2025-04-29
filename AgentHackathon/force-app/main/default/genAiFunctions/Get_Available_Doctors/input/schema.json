@@ -1,0 +1,14 @@
+{
+  "required" : [ "departmentName" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "departmentName" : {
+      "title" : "departmentName",
+      "description" : "Department Name",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

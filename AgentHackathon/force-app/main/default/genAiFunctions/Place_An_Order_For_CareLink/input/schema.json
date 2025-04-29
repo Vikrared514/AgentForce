@@ -1,0 +1,14 @@
+{
+  "required" : [ "patientId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "patientId" : {
+      "title" : "patientId",
+      "description" : "Patient Id",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

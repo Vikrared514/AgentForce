@@ -1,0 +1,35 @@
+{
+  "required" : [ "AvailableSlotId", "Date", "DoctorId", "PatientId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "AvailableSlotId" : {
+      "title" : "AvailableSlotId",
+      "description" : "Available Slot ID",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Date" : {
+      "title" : "Date",
+      "description" : "Slot Date for booking",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "DoctorId" : {
+      "title" : "DoctorId",
+      "description" : "Doctor Id",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "PatientId" : {
+      "title" : "PatientId",
+      "description" : "Patient Id",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

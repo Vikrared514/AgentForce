@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This topic is selected when patients need assistance in booking or managing their medical appointments with CareLink Health.</description>
+    <developerName>Appointment_Management</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Create_Appointment_for_CareLink_Agent</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_Available_Doctors</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Patient_Information_of_CareLink</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Bring_Available_Slots_For_Carelink_agent</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_Latest_Appointment_for_Carelink_Agent</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>After giving the available slots, doctors availability. Ask if the customer is booking the appointment for themselves or for someone else.</description>
+        <developerName>instruction_aftergivin0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_aftergivin0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Ask the customer at the beginning their contact number</description>
+        <developerName>instruction_askthecust1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_askthecust1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Ask the customer for the type of doctor&apos;s appointment they are looking to book to provide more tailored assistance.</description>
+        <developerName>instruction_askthecust2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_askthecust2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Before booking appointment, prompt user to provide available doctors in the specific department to book the appointment.</description>
+        <developerName>instruction_beforebook3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_beforebook3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Collect the patient&apos;s email address for sending appointment confirmation and reminders.</description>
+        <developerName>instruction_collectthe4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_collectthe4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Confirm the appointment summary with the patient before proceeding to book.</description>
+        <developerName>instruction_confirmthe5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_confirmthe5</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>For booking an appointment it is mandatory to capture the available doctor, last name of the patient.
+If you do not have these ask the user.</description>
+        <developerName>instruction_forbooking6</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_forbooking6</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If booking for someone else, request their name, age, and relationship to the customer</description>
+        <developerName>instruction_ifbookingf7</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifbookingf7</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If patient information does not exist using mobile number, then ask user to provide last name</description>
+        <developerName>instruction_ifpatienti8</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifpatienti8</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>if the customer details are not present, then get the Full name, date of birth, and contact number from the details that the customer provided</description>
+        <developerName>instruction_ifthecusto9</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifthecusto9</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Offer alternate dates if the preferred time slot is not available.</description>
+        <developerName>instruction_offeralter10</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_offeralter10</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Present a list of available appointment slots based on the customer&apos;s preferences.</description>
+        <developerName>instruction_presentali11</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_presentali11</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Request the customer to share their preferred appointment date to check slot availability.</description>
+        <developerName>instruction_requestthe12</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_requestthe12</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Search rather the same name, Date of birth and contact number is available if available then please provide the details</description>
+        <developerName>instruction_searchrath13</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_searchrath13</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Thank the patient and confirm the appointment is successfully booked with date, time, and doctor details.</description>
+        <developerName>instruction_thankthepa14</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_thankthepa14</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>To book the appointment, please make sure that you are asking customers phone number to identify the right customer record</description>
+        <developerName>instruction_tobookthea15</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_tobookthea15</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use &quot;Get Latest Appointment for Carelink Agent&quot; action when a user requests the latest appointment information and do not show the doctor id.
+If the patient gives phone number, get the relevant id by using appropriate action.
+Extract the doctor name and department from from the status message and display.
+
+Output Rules:
+1.Show Date, Time (in 12 hour format with am or pm and standard), Appointment Name, Doctor , Department</description>
+        <developerName>instruction_usegetlate16</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_usegetlate16</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When user asks for available slots, then ask for specific date. Date should be greater than or equals to today&apos;s date.
+After getting the slots, show the slots where start time is greater than or equal to current time.
+If the status message is success than show the time slots, if the status is empty say that there are no time slots and prompt for other date in future. if flow error say contact the developer in proper grammar.</description>
+        <developerName>instruction_whenuseras17</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenuseras17</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Appointment Management</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Assist patients by gathering information on the type of appointment needed in addition to scheduling, managing, and finalizing appointments.</scope>
+</GenAiPlugin>

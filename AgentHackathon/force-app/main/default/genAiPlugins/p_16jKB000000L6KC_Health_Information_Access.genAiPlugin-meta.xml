@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This topic is used when patients need secure access to their personal health records including appointment and latest order.</description>
+    <developerName>p_16jKB000000L6KC_Health_Information_Access</developerName>
+    <genAiFunctions>
+        <functionName>SvcCopilotTmpl__VerifyCustomer</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>SvcCopilotTmpl__IdentifyCustomerByEmail</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_Latest_Prescription_Based_on_PhoneNumber_for_Carelink_Agent</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_Latest_Appointment_for_Carelink_Agent</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the user requests the latest prescription, ask for the patient&apos;s mobile number and pass it to the action &quot;Get Latest Prescription Based on Phone Number for Carelink Agent.&quot; Then, display the output either as a table or a summary.</description>
+        <developerName>instruction_iftheuserr0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftheuserr0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When user asks for latest order, 
+Ask it whether using patient id.
+get the latest order from phone number and give it to the action Get latest order for carelink agent.</description>
+        <developerName>instruction_whenuseras1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenuseras1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Health Information Access</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only facilitate secure access to health records including appointment and latest order for patients.</scope>
+</GenAiPlugin>

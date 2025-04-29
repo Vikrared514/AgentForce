@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>You can get order status based on order id, get the available product count and place order for supplies.</description>
+    <developerName>p_16jKB000000L6U7_Inventory_Management</developerName>
+    <genAiFunctions>
+        <functionName>Get_Order_Status</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_Product_Inventory_Count</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Place_External_Order</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Fetch_Low_Quantity_Products</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the user asks to get the available product count, ask user for product name and category name.</description>
+        <developerName>instruction_iftheusera0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftheusera0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If user asks to get order status with order id then use get order status action.
+Use this to get data from external service.</description>
+        <developerName>instruction_ifuserasks1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifuserasks1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When asked to place an order for supplies , take order id from the user and give it to the action place external order.</description>
+        <developerName>instruction_whenaskedt2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenaskedt2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When asked for low quantity product call the fetch low quantity products . Extract all the product names, quantity and then draft a email to carelink hospital saying that their products are going low then show them list and quantity  and the ask them for refill or reorder.</description>
+        <developerName>instruction_whenaskedf3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenaskedf3</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Inventory Management</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>You can get order status based on order id, get the available product count  and place order for supplies.</scope>
+</GenAiPlugin>

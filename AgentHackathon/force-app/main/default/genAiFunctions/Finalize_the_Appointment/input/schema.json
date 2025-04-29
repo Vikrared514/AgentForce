@@ -1,0 +1,55 @@
+{
+  "required" : [ "appointmentDate", "mobileNumber" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "appointmentDate" : {
+      "title" : "appointmentDate",
+      "description" : "This is the appointment date that the user requested for and if the desired slot is available for that requested date.",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "availableSlot" : {
+      "title" : "availableSlot",
+      "description" : "once the user confirms the slot from the list of available slots for that date and doctor take that slot as input.",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Available_Slot__c"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "doctorName" : {
+      "title" : "doctorName",
+      "description" : "Once the user confirms the Doctors name take that as input for this.",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "User"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "mobileNumber" : {
+      "title" : "mobileNumber",
+      "description" : "Ask the user for his mobile number and consider that as input for this. It should be 10 digit number.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "patientId" : {
+      "title" : "patientId",
+      "description" : "Ask the user for his Patient ID and consider that as input for this.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "patientName" : {
+      "title" : "patientName",
+      "description" : "If the patient is not found in the records ask his Full name for patient registration.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

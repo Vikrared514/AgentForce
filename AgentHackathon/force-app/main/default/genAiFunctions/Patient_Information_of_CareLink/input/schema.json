@@ -1,0 +1,28 @@
+{
+  "required" : [ "PatientName", "phoneNumber" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "DOB" : {
+      "title" : "DOB",
+      "description" : "Date Of Birth",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "PatientName" : {
+      "title" : "PatientName",
+      "description" : "Patient Name",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "phoneNumber" : {
+      "title" : "phoneNumber",
+      "description" : "Phone Number",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}
