@@ -1,0 +1,40 @@
+<template>
+    <lightning-card title="">
+        <div class="slds-grid slds-gutters slds-wrap" style="width: 100%;">
+            <!-- Left Column: Input + Button -->
+            <div class="slds-col slds-size_1-of-2">
+                <div class="slds-m-left_small">
+                <lightning-textarea
+                    label="Enter your query here" 
+                    onchange={handleChange}
+                ></lightning-textarea>
+
+                <div class="slds-m-top_small">
+                    <lightning-button
+                        variant="brand"
+                        label="Generate AI Response"
+                        onclick={handleSent}
+                    ></lightning-button>
+                </div>
+                </div>
+
+                <template if:true={isLoading}>
+                    <div class="slds-m-top_small">
+                        <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+                    </div>
+                </template>
+            </div>
+
+            <!-- Right Column: Response -->
+            <div class="slds-col slds-size_1-of-2" if:true={resMessage}>
+                <lightning-textarea
+                    value={resMessage}
+                    disabled
+                    
+                    style="height:500px;"
+                    oninput={adjustTextAreaHeight}
+                ></lightning-textarea>
+            </div>
+        </div>
+    </lightning-card>
+</template>
